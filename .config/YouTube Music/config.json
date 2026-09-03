@@ -1,0 +1,45 @@
+{
+	"window-size": {
+		"width": 1920,
+		"height": 1080
+	},
+	"window-maximized": true,
+	"window-position": {
+		"x": 0,
+		"y": 0
+	},
+	"url": "https://music.youtube.com/watch?v=cSUVCJjOimo&list=RDAMVMrrTMQweIUzs&index=0",
+	"options": {
+		"tray": true,
+		"appVisible": true,
+		"autoUpdates": false,
+		"alwaysOnTop": false,
+		"hideMenu": false,
+		"hideMenuWarned": false,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"removeUpgradeButton": false,
+		"restartOnConfigChanges": false,
+		"trayClickPlayPause": true,
+		"autoResetAppCache": false,
+		"resumeOnStart": true,
+		"likeButtons": "",
+		"proxy": "",
+		"startingPage": "",
+		"overrideUserAgent": false,
+		"usePodcastParticipantAsArtist": false,
+		"themes": [
+			"/home/prlw/.config/YouTube Music/matugen-colors.css"
+		]
+	},
+	"plugins": {
+		"discord": {
+			"enabled": true
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "3.12.0"
+		}
+	}
+}

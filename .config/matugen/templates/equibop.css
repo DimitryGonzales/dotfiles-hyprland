@@ -1,0 +1,105 @@
+/* Original: https://github.com/CapnKitten/Material-Discord/blob/master/Material-Discord.theme.css */
+
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/source.css");
+
+:root {
+    /* App elements */
+    --app-font: "Inter";
+    --app-bg: var(--main-color);
+    /* --chat-color: var(--main-color); */
+    /* --avatar-radius: 24px; */
+    --tooltip-color: {{colors.surface_container_highest.default.hex}};
+    --tooltip-text-color: {{colors.on_surface.default.hex}};
+    /* --tooltip-shadow: 0px 5px 15px rgba(0,0,0,0.2); */
+
+    /* Accent elements */
+    --accent-hue: {{colors.primary.default.hue}};
+    --accent-saturation: {{colors.primary.default.saturation}}%;
+    --accent-lightness: {{colors.primary.default.lightness}}%;
+    --accent-text-color: {{colors.on_primary.default.hex}};
+
+    /* Alert elements */
+    --alert-hue: {{colors.secondary.default.hue}};
+    --alert-saturation: {{colors.secondary.default.saturation}}%;
+    --alert-lightness: {{colors.secondary.default.lightness}}%;
+    --alert-text-color: {{colors.on_secondary.default.hex}};
+
+    /* Message elements */ /*
+    --message-radius: 19px;
+    --message-padding-top: 8px;
+    --message-padding-side: 12px;
+    --media-radius: 19px;
+    --main-textarea-radius: 24px; */
+
+    /* Popout menu elements */ /*
+    --popout-radius: 8px;
+    --popout-radius-big: 18px; */
+
+    /* Card elements */ /*
+    --card-radius: 8px;
+    --card-radius-big: 18px; */
+
+    /* Button elements */ /*
+    --button-height: 36px;
+    --button-padding: 0 24px;
+    --button-radius: 18px; */
+}
+
+.theme-dark,
+.theme-light {
+    /* App elements */
+    --main-color: {{colors.surface.default.hex}};
+    --main-alt: {{colors.surface_container.default.hex}};
+    /* --server-color: transparent; */
+    --status-picker-color: {{colors.surface_container_high.default.hex}};
+    --sidebar-panel-color: {{colors.surface_container_high.default.hex}};
+
+    /* Warning elements */
+    --warning-hue: {{colors.error.default.hue}};
+    --warning-saturation: {{colors.error.default.saturation}}%;
+    --warning-lightness: {{colors.error.default.lightness}}%;
+    --warning-text-color: {{colors.on_error.default.hex}};
+
+    /* Message elements */
+    --message-color: {{colors.surface_container.default.hex}};
+    --message-color-hover: {{colors.surface_bright.default.hex}};
+    --message-color-alt: {{colors.surface_container_high.default.hex}};
+    --attachment-color: {{colors.surface_container_high.default.hex}};
+    --main-textarea-color: {{colors.surface_container.default.hex}};
+    --main-textarea-color-alt: {{colors.surface_container_high.default.hex}};
+    --main-textarea-border: {{colors.outline.default.hex}};
+
+    /* Popout menu elements */
+    --popout-color: {{colors.surface_container_high.default.hex}};
+    --popout-color-alt: {{colors.surface_container_highest.default.hex}};
+    --popout-header-border: {{colors.outline.default.hex}};
+    --separator-color: {{colors.outline_variant.default.hex}};
+
+    /* Card elements */
+    --card-color-filled: {{colors.surface_container.default.hex}};
+    --card-color-hover: {{colors.surface_bright.default.hex}};
+    --card-color-active: {{colors.primary.default.hex}};
+    --card-color-alt: {{colors.surface_container_high.default.hex}};
+    --card-color-alt-hover: {{colors.surface_bright.default.hex}};
+    --card-border-color: {{colors.outline.default.hex}};
+    --card-header-text-color: {{colors.on_surface.default.hex}};
+
+    /* Button elements */
+    --button-link-color: {{colors.primary.default.hex}};
+    --button-link-text-color: {{colors.on_primary.default.hex}};
+
+    /* Slider and switch elements */
+    --switch-knob-color: {{colors.on_primary.default.hex}};
+    --switch-slider-color: {{colors.primary.default.hex}};
+
+    /* Input elements */
+    --input-color: {{colors.surface_container.default.hex}};
+    --input-color-alt: {{colors.surface_container_high.default.hex}};
+    --input-border-color: {{colors.outline.default.hex}};
+    --input-text-color: {{colors.on_surface.default.hex}};
+    --input-placeholder-color: {{colors.on_surface_variant.default.hex}};
+
+    /* Various elements */
+    --md-ripple-color: {{colors.surface_bright.default.hex}};
+    --scrollbar-color: {{colors.primary.default.hex}};
+}

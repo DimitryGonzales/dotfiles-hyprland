@@ -1,0 +1,124 @@
+@import "matugen-colors.rasi"
+
+configuration {
+    display-drun: "";
+    display-clipboard: "";
+    display-emoji: "";
+
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+
+    show-icons: true;
+}
+
+* {
+    spacing: 0;
+
+    background-color: transparent;
+
+    font: "Inter 12";
+
+    margin: 0;
+    padding: 0;
+}
+
+window {
+    background-color: @surface;
+    border-radius: 24px;
+
+    location: southwest;
+
+    x-offset: 4px;
+    y-offset: -4px;
+
+    width: 20%;
+}
+
+error-message {
+    background-color: @error;
+
+    padding: 16px;
+}
+
+textbox {
+    text-color: @on-error;
+}
+
+mainbox {
+    children: [listview, inputbar];
+}
+
+listview {
+    spacing: 2px;
+
+    border-radius: 16px;
+
+    margin: 8px 8px 0 8px;
+
+    fixed-height: false;
+    lines: 8;
+}
+
+element {
+    spacing: 16px;
+
+    background-color: @surface-container;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    padding: 16px;
+}
+
+element selected {
+    background-color: @surface-bright;
+    border-radius: 16px;
+}
+
+element-icon {
+    cursor: pointer;
+
+    size: 24;
+}
+
+element-text {
+    vertical-align: 0.5;
+
+    text-color: @on-surface;
+
+    cursor: pointer;
+}
+
+message {
+    background-color: @surface-container;
+    border-radius: 16px;
+
+    text-color: @on-surface;
+
+    padding: 8px;
+}
+
+inputbar {
+    children: [prompt, entry];
+}
+
+prompt {
+    border-radius: 100% 0 0 100%;
+
+    text-color: @primary;
+
+    padding: 18px 0 14px 16px;
+}
+
+entry {
+    border-radius: 0 100% 100% 0;
+
+    text-color: @on-surface;
+    placeholder: @modi-title;
+    placeholder-color: @on-surface-variant;
+
+    cursor-color: @primary;
+
+    padding: 16px;
+}

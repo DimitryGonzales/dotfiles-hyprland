@@ -1,0 +1,60 @@
+[config.wallpaper]
+command = "awww img --transition-type fade --transition-duration 0.2 --transition-fps 60 {{image}}"
+set = true
+
+[templates.equibop]
+input_path = "~/.config/matugen/templates/equibop.css"
+output_path = "~/.config/equibop/themes/matugen-colors.css"
+
+[templates.ghostty]
+input_path = "~/.config/matugen/templates/ghostty"
+output_path = "~/.config/ghostty/themes/matugen-colors"
+post_hook = "pkill -SIGUSR2 ghostty"
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-3.0/matugen-colors.css"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/gtk.css"
+output_path = "~/.config/gtk-4.0/matugen-colors.css"
+
+[templates.hyprland]
+input_path = "~/.config/matugen/templates/hyprland.lua"
+output_path = "~/.config/hypr/matugen-colors.lua"
+post_hook = "hyprctl reload > /dev/null"
+
+[templates.hyprlock]
+input_path = "~/.config/matugen/templates/hyprlock.conf"
+output_path = "~/.config/hypr/matugen-colors.conf"
+
+[templates.millennium]
+input_path = "~/.config/matugen/templates/millennium.css"
+output_path = "~/.steam/steam/steamui/skins/Material-Theme/css/main/colors/matugen.css"
+
+[templates.qtct]
+input_path = "~/.config/matugen/templates/qtct.colors"
+output_path = "~/.local/share/color-schemes/matugen-colors.colors"
+
+[templates.rofi]
+input_path = "~/.config/matugen/templates/rofi.rasi"
+output_path = "~/.config/rofi/matugen-colors.rasi"
+
+[templates.swaync]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/swaync/matugen-colors.css"
+post_hook = "swaync-client -rs > /dev/null"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/colors.css"
+output_path = "~/.config/waybar/matugen-colors.css"
+
+[templates.youtube-music]
+input_path = "~/.config/matugen/templates/youtube-music.css"
+output_path = "~/.config/YouTube Music/matugen-colors.css"
+post_hook = """\
+if pgrep youtube-music > /dev/null; then \
+    pkill -SIGUSR2 youtube-music > /dev/null && \
+    nohup youtube-music > /dev/null 2>&1 & disown; \
+fi\
+"""

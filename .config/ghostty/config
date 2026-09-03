@@ -1,0 +1,36 @@
+font-family = JetBrainsMono Nerd Font
+font-style = Bold
+font-size = 12
+
+theme = matugen-colors
+
+cursor-style = block
+
+mouse-hide-while-typing = true
+
+keybind = ctrl+shift+up=new_split:up
+keybind = ctrl+shift+right=new_split:right
+keybind = ctrl+shift+down=new_split:down
+keybind = ctrl+shift+left=new_split:left
+
+keybind = ctrl+alt+up=goto_split:up
+keybind = ctrl+alt+right=goto_split:right
+keybind = ctrl+alt+down=goto_split:down
+keybind = ctrl+alt+left=goto_split:left
+
+keybind = ctrl+shift+e=equalize_splits
+keybind = ctrl+shift+f=toggle_split_zoom
+
+keybind = ctrl+t=new_tab
+keybind = ctrl+w=close_tab:this
+
+window-padding-x = 8
+window-padding-y = 8
+
+focus-follows-mouse = true
+
+confirm-close-surface = false
+
+shell-integration-features = no-cursor
+
+gtk-tabs-location = bottom
