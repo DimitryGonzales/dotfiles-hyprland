@@ -1,0 +1,119 @@
+[ColorEffects:Disabled]
+Color=0,0,0
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0
+ContrastEffect=0
+IntensityAmount=0
+IntensityEffect=0
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=0,0,0
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0
+ContrastEffect=0
+Enable=false
+IntensityAmount=0
+IntensityEffect=0
+
+[Colors:Button]
+BackgroundAlternate={{ colors.surface_variant.default.rgb        | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+BackgroundNormal={{    colors.surface_container_high.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationFocus={{     colors.primary.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationHover={{     colors.surface_bright.default.rgb         | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundActive={{    colors.primary.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundInactive={{  colors.on_surface_variant.default.rgb     | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundLink={{      colors.primary.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNegative={{  colors.error.default.rgb                  | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNeutral={{   colors.secondary.default.rgb              | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNormal={{    colors.on_surface.default.rgb             | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundPositive={{  colors.primary.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundVisited={{   colors.inverse_primary.default.rgb        | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+
+[Colors:Complementary]
+BackgroundAlternate={{ colors.surface_variant.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+BackgroundNormal={{    colors.surface_container_highest.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationFocus={{     colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationHover={{     colors.surface_bright.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundActive={{    colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundInactive={{  colors.on_surface_variant.default.rgb        | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundLink={{      colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNegative={{  colors.error.default.rgb                     | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNeutral={{   colors.secondary.default.rgb                 | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNormal={{    colors.on_surface.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundPositive={{  colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundVisited={{   colors.inverse_primary.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+
+[Colors:Selection]
+BackgroundAlternate={{ colors.primary_container.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+BackgroundNormal={{    colors.primary.default.rgb              | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationFocus={{     colors.primary_container.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationHover={{     colors.inverse_primary.default.rgb      | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundActive={{    colors.on_primary.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundInactive={{  colors.on_primary_container.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundLink={{      colors.inverse_primary.default.rgb      | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNegative={{  colors.error.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNeutral={{   colors.secondary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNormal={{    colors.on_primary.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundPositive={{  colors.on_primary.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundVisited={{   colors.primary_container.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+
+[Colors:Tooltip]
+BackgroundAlternate={{ colors.surface_variant.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+BackgroundNormal={{    colors.surface_container_highest.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationFocus={{     colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationHover={{     colors.surface_bright.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundActive={{    colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundInactive={{  colors.on_surface_variant.default.rgb        | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundLink={{      colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNegative={{  colors.error.default.rgb                     | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNeutral={{   colors.secondary.default.rgb                 | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNormal={{    colors.on_surface.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundPositive={{  colors.primary.default.rgb                   | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundVisited={{   colors.inverse_primary.default.rgb           | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+
+[Colors:View]
+BackgroundAlternate={{ colors.surface_variant.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+BackgroundNormal={{    colors.surface_container.default.rgb  | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationFocus={{     colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationHover={{     colors.surface_bright.default.rgb     | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundActive={{    colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundInactive={{  colors.on_surface_variant.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundLink={{      colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNegative={{  colors.error.default.rgb              | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNeutral={{   colors.secondary.default.rgb          | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNormal={{    colors.on_surface.default.rgb         | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundPositive={{  colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundVisited={{   colors.inverse_primary.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+
+[Colors:Window]
+BackgroundAlternate={{ colors.surface_variant.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+BackgroundNormal={{    colors.surface.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationFocus={{     colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+DecorationHover={{     colors.surface_bright.default.rgb     | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundActive={{    colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundInactive={{  colors.on_surface_variant.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundLink={{      colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNegative={{  colors.error.default.rgb              | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNeutral={{   colors.secondary.default.rgb          | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundNormal={{    colors.on_surface.default.rgb         | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundPositive={{  colors.primary.default.rgb            | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+ForegroundVisited={{   colors.inverse_primary.default.rgb    | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+
+[General]
+ColorScheme=Matugen
+Name=Matugen
+shadeSortColumn=true
+
+[KDE]
+contrast=0
+
+[WM]
+activeBackground={{   colors.surface_container_highest.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+activeBlend={{        colors.surface_container_highest.default.rgb | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+activeForeground={{   colors.on_surface.default.rgb                | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+inactiveBackground={{ colors.surface_container_lowest.default.rgb  | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+inactiveBlend={{      colors.surface_container_lowest.default.rgb  | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}
+inactiveForeground={{ colors.on_surface_variant.default.rgb        | replace: "rgb(", "" | replace: " ", "" | replace: ")", "" }}

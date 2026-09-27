@@ -1,0 +1,347 @@
+@import "matugen-colors.css";
+
+* {
+    all: unset;
+
+    font-family: "Inter", "Font Awesome 7 Free";
+
+    transition: all 0s;
+}
+
+#waybar {
+    background-color: @surface;
+    border-radius:
+        calc(56px / 2)
+        calc(56px / 2)
+        0
+        0;
+
+    color: @on_surface;
+    font-size: 16px;
+}
+
+#waybar > box {
+    padding: 8px;
+}
+
+tooltip {
+    background-color: @surface_container_high;
+    border-radius: 16px;
+}
+
+tooltip label {
+    padding: 8px;
+}
+
+#custom-separator {
+    color: @on_surface_variant;
+    font-weight: bold;
+}
+
+#custom-menu {
+    background-color: @surface_container;
+    border-radius: 100%;
+
+    min-width: calc(56px - (8px * 2));
+
+    transition: background 200ms ease;
+}
+
+#custom-menu:hover {
+    background-color: @surface_bright;
+
+    transition: background 0ms ease;
+}
+
+#window {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#window.class {
+    color: @on_surface_variant;
+    font-weight: normal;
+}
+
+#system-info {
+    background-color: @surface_container;
+    border-radius: calc((56px - (8px * 2)) / 2);
+
+    padding: 4px;
+}
+
+#memory,
+#mpris {
+    transition:
+        background 200ms ease,
+        color 200ms ease;
+}
+
+#memory.icon,
+#mpris.icon {
+    background-color: @primary;
+    border-radius: 100%;
+
+    color: @on_primary;
+
+    margin-right: 4px;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2));
+}
+
+#memory.icon.warning {
+    background-color: @error;
+
+    color: @on_error;
+}
+
+#memory.icon.critical {
+    background-color: @error_container;
+
+    color: @on_error_container;
+}
+
+#mpris.icon {
+    margin-left: 8px;
+}
+
+#mpris.icon.paused {
+    background-color: @primary_container;
+
+    color: @on_primary_container;
+}
+
+#workspaces {
+    background-color: @surface_container;
+    border-radius: calc((56px - (8px * 2)) / 2);
+
+    padding: 4px;
+}
+
+#workspaces button {
+    background-color: @surface_container_high;
+    border-radius: calc((56px - (8px * 2) - (4px * 2)) / 2);
+
+    font-size: 0;
+
+    margin-right: 4px;
+    padding: 0 4px;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2) - (4px * 2));
+
+    transition:
+        background 200ms ease,
+        border-radius 200ms ease,
+        box-shadow 200ms ease,
+        margin 200ms ease,
+        padding 200ms ease,
+        min-width 200ms ease;
+}
+
+#workspaces button:hover {
+    background-color: @surface_bright;
+
+    transition:
+        background 0ms ease,
+        border-radius 200ms ease,
+        box-shadow 0ms ease,
+        margin 200ms ease,
+        padding 200ms ease,
+        min-width 200ms ease;
+}
+
+#workspaces button:last-child {
+    margin-right: 0;
+}
+
+#workspaces button.empty {
+    border-radius: 100%;
+
+    margin-top: 12px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    padding: 0;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2) - (12px * 2))
+}
+
+#workspaces button.empty:hover {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2) - (10px * 2))
+}
+
+#workspaces button.empty.visible,
+#workspaces button.empty.active {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2) - (8px * 2))
+}
+
+#workspaces button:not(.empty) + button.empty,
+#workspaces button.empty:first-child,
+#workspaces button.empty:last-child {
+    margin-left: 4px;
+}
+
+#workspaces button.visible {
+    background-color: @primary_container;
+}
+
+#workspaces button.visible:hover {
+    background-color: @inverse_primary;
+}
+
+#workspaces button.active,
+#workspaces button.active:hover {
+    background-color: @primary;
+}
+
+#workspaces button.special {
+    background-color: @surface_container_high;
+    box-shadow: 0 0 0 2px @outline_variant;
+}
+
+#workspaces button.special:hover {
+    background-color: @surface_container_high;
+    box-shadow: 0 0 0 2px @outline;
+}
+
+#workspaces button.special.visible {
+    box-shadow: 0 0 0 2px @primary_container;
+}
+
+#workspaces button.special.visible:hover {
+    box-shadow: 0 0 0 2px @inverse_primary;
+}
+
+#workspaces button.special.active,
+#workspaces button.special.active:hover {
+    box-shadow: 0 0 0 2px @primary;
+}
+
+#clock {
+    background-color: @surface_container;
+    border-radius: calc((56px - (8px * 2)) / 2);
+
+    padding: 0 8px;
+}
+
+#language {
+    font-weight: bold;
+}
+
+#tray menu {
+    background-color: @surface_container;
+    border-radius: 24px;
+
+    padding: 8px;
+}
+
+#tray menu menuitem {
+    background-color: @surface_container_high;
+    border-radius: 4px;
+
+    margin-bottom: 2px;
+    padding: 16px;
+
+    transition:
+        background 200ms ease,
+        border-radius 200ms ease;
+}
+
+#tray menu menuitem:hover,
+#tray menu menuitem:first-child:hover,
+#tray menu menuitem:last-child:hover {
+    background-color: @surface_bright;
+    border-radius: 16px;
+
+    transition:
+        background 0ms ease,
+        border-radius 200ms ease;
+}
+
+#tray menu menuitem:first-child {
+    border-radius:
+        16px
+        16px
+        4px
+        4px;
+}
+
+#tray menu menuitem:last-child {
+    border-radius:
+        4px
+        4px
+        16px
+        16px;
+
+    margin-bottom: 0;
+}
+
+#privacy {
+    background-color: @surface_container;
+    border-radius: calc((56px - (8px * 2)) / 2);
+
+    padding: 4px;
+}
+
+#privacy-item {
+    background-color: @primary;
+    border-radius: 100%;
+
+    color: @on_primary;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2));
+}
+
+#control-center {
+    background-color: @surface_container;
+    border-radius: calc((56px - (8px * 2)) / 2);
+
+    padding: 4px;
+}
+
+#audio-output,
+#audio-input,
+#wireplumber.output-icon,
+#wireplumber.input-icon,
+#custom-notification {
+    border-radius: calc((56px - (8px * 2) - (4px * 2)) / 2);
+
+    font-weight: bold;
+
+    min-width: calc(56px - (8px * 2) - (4px * 2));
+
+    transition:
+        background 200ms ease;
+}
+
+#audio-output:hover,
+#audio-input:hover,
+#custom-notification:hover {
+    background-color: @surface_bright;
+
+    transition:
+        background 0ms ease;
+}
+
+#audio-output:hover,
+#audio-input:hover {
+    padding: 0 4px;
+}
+
+#audio-output:hover #wireplumber.output-icon,
+#audio-input:hover #wireplumber.input-icon {
+    margin-right: 4px;
+
+    min-width: 0;
+}
+
+#wireplumber.output-percentage,
+#wireplumber.input-percentage {
+    color: @on_surface_variant;
+    font-weight: normal;
+}

@@ -1,0 +1,349 @@
+@import "matugen-colors.css";
+
+* {
+    all: unset;
+
+    font-family: "Inter", "Font Awesome 7 Free";
+    font-size: 16px;
+
+    -gtk-icon-size: 16px;
+}
+
+.control-center {
+    background-color: @surface;
+    border-radius: calc(16px + 8px);
+
+    padding: 8px;
+}
+
+.widget-buttons-grid button {
+    background-color: @surface_container;
+    border-radius: calc(40px / 2);
+
+    color: @on_surface;
+    font-weight: bold;
+
+    margin-right: 4px;
+
+    min-height: 40px;
+
+    transition:
+        background 200ms ease,
+        color 200ms ease;
+}
+
+.widget-buttons-grid button:hover {
+    background-color: @surface_bright;
+
+    transition:
+        background 0ms ease,
+        color 0ms ease;
+}
+
+.widget-buttons-grid button:checked {
+    background-color: @primary;
+
+    color: @on_primary;
+}
+
+.widget-notifications {
+    margin-top: 8px;
+}
+
+.control-center-list-placeholder {
+    color: @on_surface_variant;
+
+    margin: 32px 0;
+}
+
+.control-center-list-placeholder image {
+    color: @primary;
+}
+
+.notification-group {
+    background-color: @surface_container;
+    border-radius: calc(8px + 8px);
+
+    margin-bottom: 4px;
+    padding: 8px;
+
+    transition:
+        background 200ms ease,
+        padding 200ms ease;
+}
+
+.notification-group:last-child {
+    margin-bottom: 0;
+}
+
+.notification-group.collapsed {
+    background-color: transparent;
+    padding: 0;
+}
+
+.close-button {
+    background: @error;
+    border-radius: 100%;
+
+    color: @on_error;
+
+    margin-top: 8px;
+    margin-right: 8px;
+
+    min-width: 20px;
+    min-height: 20px;
+
+    transition:
+        background 200ms ease,
+        color 200ms ease;
+}
+
+.close-button:hover {
+    background-color: @error_container;
+
+    color: @on_error_container;
+
+    transition:
+        background 0ms ease,
+        color 0ms ease;
+}
+
+.notification-group-headers,
+.notification-group-buttons {
+    margin-bottom: 4px;
+}
+
+.notification-group-icon {
+    color: @primary;
+
+    margin-right: 4px;
+
+    -gtk-icon-size: 1.25rem;
+}
+
+.notification-group-header {
+    color: @on_surface;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.notification-group-buttons button {
+    background-color: @surface_container_high;
+    border-radius: 100%;
+
+    color: @on_surface;
+
+    min-height: 30px;
+    min-width: 30px;
+
+    transition: background 200ms ease;
+}
+
+.notification-group-buttons button:hover {
+    background-color: @surface_bright;
+
+    transition: background 0ms ease;
+}
+
+.notification-group:not(.collapsed) .notification-background {
+    margin-top: 4px;
+}
+
+.floating-notifications .notification-background {
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.notification {
+    background-color: @surface_container;
+    border-radius: 16px;
+
+    min-height: 40px;
+
+    transition:
+        background 200ms ease,
+        border-radius 200ms ease;
+}
+
+.notification-group:not(.collapsed) .notification {
+    background-color: @surface_container_high;
+    border-radius: 8px;
+}
+
+.floating-notifications .notification {
+    background-color: @surface;
+}
+
+.notification.low {
+    border: 2px solid @outline_variant;
+}
+
+.notification.critical {
+    border: 2px solid @error;
+}
+
+.notification-default-action {
+    border-radius: inherit;
+
+    padding: 8px;
+
+    transition: background 200ms ease;
+}
+
+.notification-default-action:hover,
+.notification-group.collapsed:hover .notification-default-action {
+    background-color: @surface_bright;
+
+    transition: background 0ms ease;
+}
+
+.image {
+    margin-right: 8px;
+
+    -gtk-icon-size: 3rem;
+}
+
+.app-icon {
+    -gtk-icon-size: calc(3rem / 2);
+}
+
+.text-box label {
+    /* Fixes base GTK 4 CSS setting a filter of opacity 50% for some odd reason */
+    filter: none;
+}
+
+.summary {
+    color: @on_surface;
+    font-weight: bold;
+}
+
+.time {
+    color: @on_surface_variant;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    transition: margin 200ms ease;
+}
+
+.notification-group.collapsed:hover .time,
+.notification-group:not(.collapsed) .notification:hover .time {
+    margin-right: calc(20px + 8px);
+}
+
+.body {
+    color: @on_surface_variant;
+    font-size: 0.9rem;
+
+    margin-top: 4px;
+}
+
+.body-image {
+    margin-top: 4px;
+}
+
+.inline-reply {
+    margin-top: 4px;
+}
+
+.inline-reply-entry {
+    background-color: @surface_container_high;
+    border-radius: calc(40px / 2);
+
+    color: @on_surface;
+
+    min-height: 40px;
+
+    transition: background 200ms ease;
+}
+
+.notification-group:not(.collapsed) .inline-reply-entry {
+    background-color: @surface_container_highest;
+}
+
+.floating-notifications .inline-reply-entry {
+    background-color: @surface_container;
+}
+
+.inline-reply-button {
+    background-color: @surface_container_high;
+    border-radius: 100%;
+
+    color: @on_surface;
+
+    margin-left: 4px;
+
+    min-height: 40px;
+    min-width: 40px;
+
+    transition:
+        background 200ms ease,
+        color 200ms ease;
+}
+
+.notification-group:not(.collapsed) .inline-reply-button {
+    background-color: @surface_container_highest;
+}
+
+.floating-notifications .inline-reply-button {
+    background-color: @surface_container;
+}
+
+.inline-reply-button:hover,
+.notification-group:not(.collapsed) .inline-reply-button:hover {
+    background-color: @surface_bright;
+
+    transition:
+        background 0ms ease,
+        color 0ms ease;
+}
+
+.inline-reply-button:disabled,
+.inline-reply-button:disabled:hover,
+.notification-group:not(.collapsed) .inline-reply-button:disabled:hover{
+    background-color: @surface_variant;
+
+    color: @on_surface_variant;
+}
+
+.notification-content progressbar {
+    margin-top: 4px;
+}
+
+.notification-alt-actions {
+    margin: 8px;
+}
+
+.notification-action {
+    margin-right: 4px;
+}
+
+.notification-action:last-child {
+    margin-right: 0;
+}
+
+.notification-action button {
+    background-color: @surface_container_high;
+    border-radius: calc(40px / 2);
+
+    color: @on_surface;
+    font-weight: bold;
+
+    min-height: 40px;
+
+    transition: background 200ms ease;
+}
+
+.notification-group:not(.collapsed) .notification-action button {
+    background-color: @surface_container_highest;
+}
+
+.floating-notifications .notification-action button {
+    background-color: @surface_container;
+}
+
+.notification-action button:hover,
+.notification-group:not(.collapsed) .notification-action button:hover {
+    background-color: @surface_bright;
+
+    transition: background 0ms ease;
+}
